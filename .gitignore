@@ -6,3 +6,4 @@ djangoreactapi/backend/node_modules/
 djangoreactapi/backend/media/
 djangoreactapi/backend/tb/static/
 __pycache__
+*.js linguist-vendored=false
