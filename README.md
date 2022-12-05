@@ -56,5 +56,5 @@ python manage.py runserver 0.0.0.0:8000   (in Backend)
 ![2022-12-05 21;33;22_](https://user-images.githubusercontent.com/86187456/205638610-90561dd4-cadf-44ea-8252-5c1563077306.png)
 ![2022-12-05 21;33;53_](https://user-images.githubusercontent.com/86187456/205638613-a5526f48-111a-4fb2-a524-1dc7cd8d2214.png)
 ![2022-12-05 21;33;19_](https://user-images.githubusercontent.com/86187456/205638620-608ec745-e212-4359-9de6-aed45daaecd4.png)
-![1](https://user-images.githubusercontent.com/86187456/205638628-f6111fe5-ac81-4a37-8847-7eca36f8f31e.png){: width="300" height="300"}
-![2](https://user-images.githubusercontent.com/86187456/205638634-1637ef27-8308-433b-a13d-714f9f0bf072.png){: width="300" height="300"}
+<img src="https://user-images.githubusercontent.com/86187456/205638628-f6111fe5-ac81-4a37-8847-7eca36f8f31e.png" width="300" height="300">
+<img src="https://user-images.githubusercontent.com/86187456/205638634-1637ef27-8308-433b-a13d-714f9f0bf072.png" width="300" height="300">
