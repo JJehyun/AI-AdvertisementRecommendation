@@ -1,32 +1,36 @@
 
+
+<center>
+<div>기술스택 🛠</div>
+<div style={display : flex}>
+<img src="https://img.shields.io/badge/React-3776AB?style=for-the-badge&logo=React&logoColor=white">
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black">
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white">
+<img alt="Redux" src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=white">
+<img alt="Prettier" src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=Prettier&logoColor=white">
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white">
+<img alt="Axios" src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white">
+</div>
+</center>
+
+
+
+
 # Prerequisites
 1. Clone the repo
 ```
-
-
+$ git clone https://github.com/JJehyun/AI-AdvertisementRecommendation.git
 ```
+2. Install packages
 ```
-    yarn install
-    (in frontend)
-    
-    프론트엔드 실행
-    yarn start
-
-    만약 yarn start를 했는데 웹이 켜지지 않으면
-    unset HOST 입력
-    
+$ yarn install (in Frontend)
+$ pip install -r requirements.txt (in Backend)
 ```
-<br />
-
-## 백엔드 모듈 설치 웹 서버 실행
+3. client build & run project
 ```
-python 모듈 설치
-    pip install -r requirements.txt
-    (in backend)
-
-백엔드 실행
-    python manage.py runserver 0.0.0.0:8000
-```    
+yarn start  (in Frontend)
+python manage.py runserver 0.0.0.0:8000   (in Backend)
+```
 
 <center>
 <div style={display : flex}>
