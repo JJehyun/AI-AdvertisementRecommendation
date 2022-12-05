@@ -17,4 +17,10 @@ react 모듈 설치
 
 
 <img src="https://img.shields.io/badge/React-3776AB?style=for-the-badge&logo=React&logoColor=white">
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black">
+<img alt="JavaScript" src="https://img.shields.io/badge/TypeScript-#3178C6?style=for-the-badge&logo=TypeScript&logoColor=white">
+
+
+
+
 <img src="https://img.shields.io/badge/styled-components?style=for-the-badge&logo=styled-components&logoColor=white">
