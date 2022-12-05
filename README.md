@@ -22,6 +22,7 @@ react 모듈 설치
 
 <img alt="Redux" src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=white">
 <img alt="Prettier" src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=Prettier&logoColor=white">
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white">
 
 
 <img src="https://img.shields.io/badge/styled-components?style=for-the-badge&logo=styled-components&logoColor=white">
