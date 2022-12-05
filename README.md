@@ -14,3 +14,6 @@ react 모듈 설치
 
     만약 yarn start를 했는데 웹이 켜지지 않으면
     unset HOST 입력
+
+
+<img src="https://img.shields.io/badge/React-색상?style=for-the-badge&logo=React&logoColor=blue">
