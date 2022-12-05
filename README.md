@@ -52,5 +52,9 @@ python manage.py runserver 0.0.0.0:8000   (in Backend)
 - 머신러닝을 이용한 모델 활용한 웹사이드
 - 현재 재생되는 동영상과 연관된 상품을 추천해줌
 
-![3](https://user-images.githubusercontent.com/86187456/205637293-7afc88ce-c98b-4916-8bf0-5a35b1491351.png)
-![4](https://user-images.githubusercontent.com/86187456/205637322-82cb022a-5cd7-4c97-bbff-ec482c391199.png)
+
+![2022-12-05 21;33;22_](https://user-images.githubusercontent.com/86187456/205638610-90561dd4-cadf-44ea-8252-5c1563077306.png)
+![2022-12-05 21;33;53_](https://user-images.githubusercontent.com/86187456/205638613-a5526f48-111a-4fb2-a524-1dc7cd8d2214.png)
+![2022-12-05 21;33;19_](https://user-images.githubusercontent.com/86187456/205638620-608ec745-e212-4359-9de6-aed45daaecd4.png)
+![1](https://user-images.githubusercontent.com/86187456/205638628-f6111fe5-ac81-4a37-8847-7eca36f8f31e.png)
+![2](https://user-images.githubusercontent.com/86187456/205638634-1637ef27-8308-433b-a13d-714f9f0bf072.png)
