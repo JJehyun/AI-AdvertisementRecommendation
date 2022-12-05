@@ -1,5 +1,5 @@
 # 기술스택 🛠
-으하하하
+우하하
 - Frontend
 <center>
 <div style={display : flex}>
