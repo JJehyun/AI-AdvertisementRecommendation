@@ -1,0 +1,237 @@
+.item_list{
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+    height: 476px;
+    overflow: auto;
+    border: solid 0.3px #707070;
+    background-color: #ffffff;
+    padding: 0 15px;
+}
+.item_list > div{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.item_list > div > span:nth-child(1){
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #6b6b6b;
+    position: absolute;
+    left: 0;
+}
+.item_list > div > .item_list_search{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    margin: 0 17px 0 0;
+}
+.item_list > div > .item_list_search > input[type="text"]{
+    width: 100%;
+    height: 30px;
+    padding: 0 0 0 10px;
+    border: solid 0.4px #b4b4b4;
+    background-color: #ffffff;
+}
+.item_list > div > .item_list_search > button[type="button"]{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 30px;
+    border: solid 0.4px #a5a5a5;
+    background-color: #a5a5a5;
+}
+.item_list > div > .item_list_search_guide{
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #6b6b6b;
+}
+.item_list > .table-library{
+    width: 100%;
+}
+.item_list > .table-library > thead > tr{
+    width: 1245px;
+    height: 50px;
+    line-height: 50px;
+    border: solid 0.3px #b4b4b4;
+    background-color: #f7f7f7;
+}
+.item_list > .table-library > tbody > tr{
+    width: 1245px;
+    border: solid 0.3px #b4b4b4;
+    background-color: #ffffff;
+}
+.item_list > .table-library > thead > tr > th {
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-indent: 6px;
+    text-align: left;
+    color: #6b6b6b;
+}
+.item_list > .table-library > tbody > tr > td{
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: -0.17px;
+    color: #000000;
+}
+.item_list > .table-library > tbody > tr > td > .item_list_image{
+    width: 110px;
+    height: 75px;
+    border: solid 0.3px #cbcbcb;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+.item_list > .table-library > tbody > tr > .item_list_btn > button[type="button"]{
+    width: 50px;
+    height: 26px;
+    border-radius: 6px;
+    border: solid 0.5px #a5a5a5;
+    background-color: #ffffff;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #a5a5a5;
+    margin-top: 4px;
+}
+/*상품 수정 modal*/
+.item_update{
+    position: fixed;
+    right: 0;
+    top: 66px;
+    height: calc(100% - 66px);
+    width: 339px;
+    padding: 32px 39px 0 22px;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+    overflow: auto;
+}
+.item_update > h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.34px;
+    text-align: left;
+    color: #121212;
+    margin-bottom: 24px;
+}
+.item_update > h1 > button[type="button"]{    
+    font-size: 24px;
+    background-color: #ffffff;
+    border: none;
+    float: right;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.item_update > div > img{
+    width: 250px;
+    /* height: 250px; */
+}
+.item_update > ul:nth-child(2){
+    border: 1px solid #c3c3c3;
+    background-color: #f7f7f7;
+}
+.item_update > ul:nth-child(2) > li:first-child{
+    padding: unset !important;
+}
+.item_update > ul:nth-child(2) > li:first-child > img{
+    width: 100%;
+}
+.item_update > ul:nth-child(2) > li:nth-child(2n){
+    font-size: 10px;
+    line-height: 1.7;
+    letter-spacing: -0.12px;
+    text-align: left;
+    color: #a5a5a5;
+    padding-left: 11px;
+}
+.item_update > ul:nth-child(2) > li:nth-child(2n - 1){
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: -0.12px;
+    text-align: left;
+    color: #313131;
+    padding-left: 11px;
+}
+.item_update > ul:nth-child(2) > li:last-child{
+    padding-bottom: 12px;
+}
+.item_update > ul:nth-child(3) > li:nth-child(1),
+.item_update > ul:nth-child(3) > li:nth-child(2n),
+.item_update > ul:nth-child(3) > li:nth-last-child(2){
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2.5;
+    letter-spacing: -0.19px;
+    text-align: left;
+    color: #121212;
+}
+.item_update > ul:nth-child(3) > li:nth-child(2n+1) > input[type="text"]{
+    width: 100%;
+    height: 30px;
+    margin: 6px 0 0;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+}
+.item_update > ul:nth-child(3) > li:nth-child(13) > input::placeholder {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.13px;
+    color: #a5a5a5;
+}
+.item_update > ul:nth-child(3) > button[type="button"]{
+    width: 100%;
+    height: 38px;
+    margin: 20px 0 20px;
+    background-color: #4d20a3;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+    text-align: center;
+    color: #ffffff;
+}
+#root > div > section > div.item_update > ul:nth-child(2) > div > div:nth-child(2) > li:nth-child(3),
+#root > div > section > div.item_update > ul:nth-child(2) > div > div:nth-child(2) > li:nth-child(1),
+#root > div > section > div.item_update > ul:nth-child(2) > div > div:nth-child(1) > li:nth-child(3),
+#root > div > section > div.item_update > ul:nth-child(2) > div > div:nth-child(1) > li:nth-child(1){
+font-size: 10px;
+line-height: 1.7;
+color:#a5a5a5;
+font-family: "NotoSansCJKKR";    
+}
+
+#root > div > section > div.item_update > ul:nth-child(2) > div > div:nth-child(2) > li:nth-child(4),
+#root > div > section > div.item_update > ul:nth-child(2) > div > div:nth-child(2) > li:nth-child(2),
+#root > div > section > div.item_update > ul:nth-child(2) > div > div:nth-child(1) > li:nth-child(4),
+#root > div > section > div.item_update > ul:nth-child(2) > div > div:nth-child(1) > li:nth-child(2){
+color:var(--black-two);
+line-height: 1.7;
+letter-spacing: -0.12px;
+font-size: 10px;
+font-family: "NotoSansCJKKR";   
+}
+.item_update > ul:nth-child(3) > li:nth-child(1) > .item_add_load_btn{
+    width: 133.4px;
+    height: 30px;
+    border: solid 0.4px #4d20a3;
+    background-color: #ffffff;
+    margin-left: 35px;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    text-align: center;
+    color: #4d20a3;
+}
+.item_update > ul:nth-child(3) > li:nth-child(3) > button[type="button"]{
+    width: 61px;
+    height: 30px;
+    background-color: #a5a5a5;
+    border: none;
+    font-size: 11px;
+    letter-spacing: -0.12px;
+    color: #ffffff;
+    padding-top: 4px;
+}

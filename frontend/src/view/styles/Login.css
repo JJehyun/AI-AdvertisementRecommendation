@@ -1,0 +1,158 @@
+/* login */
+.login_module {
+  width: 402px;
+  height: 293px;
+  margin: 80px auto 165px;
+  object-fit: contain;
+}
+.login_module > form > .form-group{
+    margin: 16px 0;
+}
+.login_module > form > .form-group > input[type="text"],
+.login_module > form > .form-group > input[type="password"]{
+    padding: 10px 16px;
+    box-shadow: none;
+    width: 402px;
+    height: 40px;
+    background-color: #f4f4f4;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: left;
+    color: #7f7f7f;
+    border: none;
+}
+.login_module .login_bottom{
+  font-size: 12px;
+  color: #777777;
+}
+.login_module .login_bottom > div:nth-child(1){
+  margin: 8px 0 16px 0;
+}
+.login_module .login_bottom > div:nth-child(1) > a{
+    float: right;
+    margin-top: 4px;
+}
+.login_module .login_bottom > .login_submit{
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    color: #fff;
+    background-color: #4d20a3;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    line-height: 1.43;
+    cursor: pointer;
+}
+.login_module .login_bottom > div:nth-child(3){
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+    height: 18px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #6b6b6b;
+}
+.login_module .login_bottom > div:nth-child(3) > span > a{
+    color: #6b6b6b;
+}
+.login_module .login_bottom .id_save_check > input[type="checkbox"]{
+    display: none;
+}
+.login_module .login_bottom .id_save_check > input[type="checkbox"] + label{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 1px;
+    border: 1px solid;
+    box-shadow: 1px 1px grey inset;
+    position: relative;
+}
+.login_module .login_bottom .id_save_check > input[type="checkbox"] + label > span{
+    position: absolute;
+    top: -2px;
+    left: 20px;
+    width: 120px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    color: #6b6b6b;
+}
+.login_module .login_bottom .id_save_check > input[type="checkbox"]:checked + label{
+    background: url(../images/common/checked.PNG) no-repeat center/17px 17px;
+}
+
+.title > .change_pw_star{
+    color: #4d20a3;
+    font-size: 30px;
+    font-weight: 600;
+    height: 36px;
+    margin: 36px 0 12px 0;
+}
+.title > .change_pw_info{
+    font-size: 19px;
+    font-weight: 600;
+}
+.change_pw_module input[type="password"]{
+    background-color: #fff !important;
+    border: solid 1px #dcdcdc !important;
+}
+.change_pw_module input[type="password"]::placeholder{
+    color: #b4b4b4 !important;
+}
+.change_pw_module > .form-group{
+    margin: 4px 0;
+}
+.change_pw_module > .login_bottom{
+    margin-top: 50px;
+}
+/* footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 214px;
+    padding: 46px 0 0 24.4%;
+    background-color: #f7f7f7;
+}
+.footer img{
+    width: 80px;
+    position: absolute;
+    left: 16.6%;
+    top: 40px;
+}
+.footer p{
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #7f7f7f;
+}
+.footer p:nth-child(2){
+    margin-bottom: 16px;
+}
+.footer p:nth-child(6){
+    margin-top: 15px;
+    color: #6b6b6b;
+}
+
+@media screen and (max-height: 768px){
+    .footer{
+        height: 150px;
+        padding: 12px 0 0 19.4%;
+    }
+    .footer img{
+        left: 7.6%;
+        top: 12px;
+    }
+}
+@media screen and (max-height: 100%) {
+    .footer{
+        bottom: unset;
+    }
+}

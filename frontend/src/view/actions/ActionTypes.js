@@ -1,0 +1,15 @@
+export const AUTH_LOGIN = "AUTH_LOGIN";
+export const AUTH_LOGIN_SUCCESS = "AUTH_LOGIN_SUCCESS";
+export const AUTH_LOGIN_FAILURE = "AUTH_LOGIN_FAILURE";
+
+export const AUTH_JOIN = "AUTH_JOIN";
+export const AUTH_JOIN_SUCCESS = "AUTH_JOIN_SUCCESS";
+export const AUTH_JOIN_FAILURE = "AUTH_JOIN_FAILURE";
+
+export const SBS_API = "SBS_API";
+export const SBS_API_SUCCESS = "SBS_API_SUCCESS";
+export const SBS_API_FAILURE = "SBS_API_FAILURE";
+
+export const VIDEO_LIST = "VIDEO_LIST";
+export const VIDEO_LIST_SUCCESS = "VIDEO_LIST_SUCCESS";
+export const VIDEO_LIST_FAILURE = "VIDEO_LIST_FAILURE";

@@ -1,0 +1,1122 @@
+.make_ai{
+    /* margin: 34px 0 0 32px;
+    width: 100%;
+    height: 650px;
+    max-width: 1280px; */
+    /*min-width: 1200px;*/
+}
+.make_ai .make_ai_level{
+    margin-bottom: 25px;
+}
+.make_ai .make_ai_level > li{
+    display: inline-block;
+    text-align: center;
+    height: 41px;
+    line-height: 41px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+    color: #707070;
+    cursor: pointer;
+}
+.make_ai .make_ai_level > li:nth-child(1){
+    background: url('../images/common/level/ed_ai_make/동영상\ 선택.png') 100% 100% no-repeat;
+    width: 134px;
+    text-indent: -18px;
+}
+.make_ai .make_ai_level > li:nth-child(2){
+    background: url('../images/common/level/ed_ai_make/상품\ 선택.png') 100% 100% no-repeat;
+    width: 134px;
+    margin-left: -19px;
+}
+.make_ai .make_ai_level > li:nth-child(3){
+    background: url('../images/common/level/ed_ai_make/AI\ 모델링.png') 100% 100% no-repeat;
+    width: 134px;
+    margin-left: -20px;
+}
+.make_ai .make_ai_level > li:nth-child(4){
+    background: url('../images/common/level/ed_ai_make/AI\ 편집.png') 100% 100% no-repeat;
+    width: 134px;
+    margin-left: -21px;
+}
+.make_ai .make_ai_level > li.selected{ color: #4d20a3; }
+.make_ai .make_ai_level > li:nth-child(1).selected{ background: url('../images/common/level/ed_ai_make/동영상\ 선택-활성화.png') 100% 100% no-repeat; }
+.make_ai .make_ai_level > li:nth-child(2).selected{ background: url('../images/common/level/ed_ai_make/상품\ 선택-활성화.png') 100% 100% no-repeat; }
+.make_ai .make_ai_level > li:nth-child(3).selected{ background: url('../images/common/level/ed_ai_make/AI\ 모델링-활성화.png') 100% 100% no-repeat; }
+.make_ai .make_ai_level > li:nth-child(4).selected{ background: url('../images/common/level/ed_ai_make/AI\ 편집-활성화.png') 100% 100% no-repeat; }
+
+/*ai_tc_fix*/
+.make_ai .make_ai_level > .tc_non_selected{
+    background: url('../images/common/level/ed_ai_make/모델링\ &\ TC\ 편집.png') 100% 100% no-repeat !important;
+    width: 203px !important;
+    margin-left: -28px !important;
+}
+.make_ai .make_ai_level > .tc_selected{ 
+    background: url('../images/common/level/ed_ai_make/모델링\ &\ TC\ 편집-활성화.png') 100% 100% no-repeat !important;
+    width: 203px !important;
+    margin-left: -28px !important;
+    color: #4d20a3 !important;
+}
+
+/* .make_ai .make_ai_level{
+    font-size: 0;
+    margin-bottom: 25px;
+}
+.make_ai .make_ai_level > img{
+    height: 40px;
+}
+.make_ai .make_ai_level > li{
+    display: inline-block;
+    width: 140px;
+    margin-right: 22px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: solid 0.3px #707070;
+    background-color: #ededed;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+    cursor: pointer;
+    position: relative;
+} */
+/* .make_ai .make_ai_level > li::before{
+    content: '';
+    position: absolute;
+    right: -45px;
+    height: 0;
+    border-style: solid;
+    border-width: 22px;
+    border-color: transparent transparent transparent #707070;
+} */
+/* .make_ai .make_ai_level > li.selected{
+    border: solid 0.3px #4d20a3;
+    background-color: #ffffff;
+    color: #4d20a3;
+}
+.make_ai .make_ai_level > li.selected::before{
+    border-color: transparent transparent transparent #fff;
+} */
+
+/* 동영상 선택 */
+
+.make_ai .make_ai_video_select{
+    /* border: solid 0.3px #cbcbcb;
+    background-color: #ffffff;
+    position: relative;
+    max-width: 1280px; */
+    padding-bottom: 80px;
+}
+.make_ai .make_ai_video_select > div{
+    /* padding: 14px 0 12px 27px; */
+    border-bottom: solid 0.3px #b4b4b4;
+    position: relative;
+}
+.make_ai .make_ai_item_select > div:nth-child(3){
+    height: 38px;
+    box-sizing: unset;
+    line-height: 38px;
+}
+.make_ai .make_ai_item_select > div:nth-child(3) > button[type="button"]{
+    height: 38px;
+    position: absolute;
+    right: 20px;
+    padding: 7px 40px;
+    background-color: #4d20a3;
+    border: none;
+    font-size: 16px;
+    letter-spacing: -0.19px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 0;
+}
+.make_ai .make_ai_video_select > div > h1{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+    color: #3d3d3d;
+}
+.make_ai .make_ai_video_select > table{
+    width: 100% !important;
+    margin: 15px 0 !important;
+}
+.make_ai .make_ai_video_select > table th,
+.make_ai .make_ai_video_select > table td {
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: -0.17px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 330px;
+}
+.make_ai .make_ai_video_select > table th input[type="checkbox"]:checked + label{
+    background: url('../images/common/checked.PNG') no-repeat center/100% 100%;
+}
+.make_ai_video_search{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 136px;
+    margin: 25px 0 18px 0;
+    padding: 0;
+    border: solid 1px #cbcbcb;
+    background-color: #fff;
+}
+.make_ai_video_search > div:nth-child(1),
+.make_ai_video_search > table{
+    padding: 0 0 0 16px;
+}
+.make_ai_video_search > div:nth-child(1){
+    height: 42px;
+    line-height: 42px;
+    border-bottom: solid 1px #cbcbcb;
+    font-size: 16px;
+    font-weight: 600;
+    color: #121212;
+}
+.make_ai_video_search > table{
+    border-collapse: separate;
+    padding-top: 13px;
+    width: 60%;
+    min-width: 664px;
+}
+.make_ai_video_search > table > tr > td{
+    font-size: 12px;
+    line-height: 2.25;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: #121212;
+    position: relative;
+}
+.make_ai_video_search > table > tr > td.make_ai_video_search_date{
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #b4b4b4;
+}
+.make_ai_video_search > table > tr > td.make_ai_video_search_date > input[type="text"]:nth-child(1){
+    margin-right: 8px;
+}
+.make_ai_video_search > table > tr > td.make_ai_video_search_date > input[type="text"]:nth-child(2){
+    margin-left: 8px;
+}
+.make_ai_video_search > table > tr > td > input[type="text"]{
+    width: 104px;
+    height: 30px;
+    padding: 0 0 0 10px;
+    border: solid 1px #cbcbcb;
+    background-color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #6b6b6b;
+}
+.make_ai_video_search > table > tr > td > input[type="text"].video_list_search{
+    width: 220px;
+}
+.make_ai_video_search > table > tr > td >  button.make_ai_video_search_filter{
+    width: 58px;
+    height: 24px;
+    margin: 0;
+    border: solid 1px #cbcbcb;
+    background-color: #Fff;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #121212;
+}
+.make_ai_video_search > .make_ai_video_search_btn_group{
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+}
+.make_ai_video_search > .make_ai_video_search_btn_group > button{
+    width: 110px;
+    height: 38px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    letter-spacing: -0.19px;
+    text-align: center;
+    border: solid 1px #4d20a3;
+    color: #4d20a3;
+}
+.make_ai_video_search > .make_ai_video_search_btn_group > button.make_ai_video_search_btn{
+    background-color: #4d20a3;
+    color: #fff;
+    margin-right: 15px;
+}
+.make_ai_video_search_guide{
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #6b6b6b;
+    margin-left: 26px;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list{
+    overflow: auto;
+    width: calc(100% - 35px);
+    margin: 15px 20px 0 15px;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > thead{
+    height: 50px;
+    line-height: 50px;
+    border: solid 0.3px #b4b4b4;
+    background-color: #f7f7f7;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > tbody > tr{
+    border: solid 0.3px #b4b4b4;
+    width: 1245px;
+    background-color: #ffffff;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > tbody > tr.selected{
+    background-color: #f6f2ff;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > tbody > tr > td > button{
+    border: none;
+    background-color: unset;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > tbody > tr > td > button > img{
+    vertical-align: middle;
+    width: 110px;
+    /* height: 75px; */
+    border: solid 0.3px #cbcbcb;
+    margin: 10px 10px 10px 0;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > tbody > tr > td:last-child > button{
+    width: 100%;
+    height: 26px;
+    border-radius: 6px;
+    border: solid 1px #4d20a3;
+    background-color: #ffffff;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #4d20a3;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > tbody > tr > td:last-child > button:disabled{
+    border: solid 1px #a5a5a5;
+    color: #a5a5a5;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > ul > li{
+    float: left;
+    width: 155px;
+    height: 180px;
+    margin: 0 20px 20px 0;
+    border: solid 0.3px #b4b4b4;
+    background-color: #f7f7f7;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > ul > li > button{
+    background-color: unset;
+    border: none;
+    padding: 0;
+    text-align: left;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > ul > li > button > img{
+    width: 100%;
+    height: 115px;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > ul > li > button > div > p:nth-child(1){
+    margin: 7px 8px 1px 8px;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #000000;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 14px;
+    height: 28px;
+    text-decoration: none;
+}
+.make_ai .make_ai_video_select > .make_ai_video_list > ul > li > button > div > p:nth-child(2){
+    margin: 0.6px auto 0 8.5px;
+    font-size: 10px;
+    letter-spacing: -0.12px;
+    color: #b4b4b4;
+}
+
+/* 상품 선택 */
+
+.make_ai .make_ai_item_select{
+    border: solid 0.3px #cbcbcb;
+    background-color: #ffffff;
+    position: relative;
+}
+.make_ai .make_ai_item_select > div{
+    padding: 14px 0 12px 27px;
+    border-bottom: solid 0.3px #b4b4b4;
+    position: relative;
+}
+.make_ai .make_ai_item_select > div > h1{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+    color: #3d3d3d;
+}
+.make_ai .make_ai_item_select > div > .make_ai_item_search{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 30px;
+}
+.make_ai .make_ai_item_select > div > .make_ai_item_search > input[type="text"]{
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 10px;
+    border: solid 0.4px #b4b4b4;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+.make_ai .make_ai_item_select > div > .make_ai_item_search > button[type="button"]{
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: solid 0.4px #a5a5a5;
+    background-color: #a5a5a5;
+}
+.make_ai .make_ai_item_select > .make_ai_item_list{
+    height: 475px;
+    overflow: auto;
+}
+.make_ai .make_ai_item_select > .make_ai_item_list > ul > li{
+    float: left;
+    width: 155px;
+    height: 180px;
+    margin: 0 20px 20px 0;
+    border: solid 0.3px #b4b4b4;
+    background-color: #f7f7f7;
+}
+.make_ai .make_ai_item_select > .make_ai_item_list > ul > li > button{
+    background-color: unset;
+    border: none;
+    padding: 0;
+    text-align: left;
+}
+.make_ai .make_ai_item_select > .make_ai_item_list > ul > li > button > img{
+    width: 100%;
+    height: 115px;
+}
+.make_ai .make_ai_item_select > .make_ai_item_list > ul > li > button > div > p:nth-child(1){
+    margin: 7px 8px 1px 8px;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #000000;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 14px;
+    height: 28px;
+    text-decoration: none;
+    position: relative;
+}
+.make_ai .make_ai_item_select > .make_ai_item_list > ul > li > button > div > p:nth-child(2){
+    margin: 0.6px auto 0 8.5px;
+    font-size: 10px;
+    letter-spacing: -0.12px;
+    color: #b4b4b4;
+}
+.make_ai .make_ai_item_select > .make_ai_item_select_btn {
+    position: absolute;
+    right: 34px;
+    bottom: 23px;
+    width: 110px;
+    height: 38px;
+    background-color: #4d20a3;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+    color: #ffffff;
+}
+
+/* make_ai_modeling */
+.make_ai .make_ai_modeling{
+    width: 100%;
+    max-width: 1280px;
+    background-color: #3d3d3d;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_video{
+    position: relative;
+    /* height: 336.2px; */
+    padding: 47px 30px 30px 48.5px;
+    border-bottom: 1px solid #313131;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_video > span {
+    display: inline-block;
+    position: relative;
+    margin-right: 25px;
+    height: 100%;
+    min-height: 253px;
+    width: 47%;
+    vertical-align: top;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_video > span > h1 {
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #ffffff;
+    position: absolute;
+    top: -20px;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_video > span > img,
+.make_ai .make_ai_modeling > .make_ai_modeling_video > span > iframe,
+.make_ai .make_ai_modeling > .make_ai_modeling_video > span > video{
+    width: 100%;
+    min-height: 253.1px;
+    border-radius: 5px;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_video > span > p{
+    height: 253.1px;
+    line-height: 253px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background-color: #000000;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_video > .make_ai_modeling_video_start{
+    text-align: right;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_video > .make_ai_modeling_video_start > button[type="button"]{
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #ffffff;
+    margin-top: 6px;
+    margin-left: 12px;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_video > .make_ai_modeling_video_start > p{
+    display: inline-block;
+    margin: 11.3px 0 0.2px 8px;
+    font-family: AppleSDGothicNeo;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #cbcbcb;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_video > span > .make_ai_modeling_spinner{
+    position: absolute;
+    top: calc(50% - 26px);
+    left: calc(50% - 33px);
+    width: 66px;
+    padding: 11px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 11px;
+    line-height: 1.25;
+    letter-spacing: -0.14px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.make_ai .make_ai_modeling > .make_ai_modeling_item{
+    /* height: 214px; */
+    border: solid 0.3px #cbcbcb;
+    padding: 30px 0 45px 48px;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_item > p{
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_item > p > button{
+    width: 72px;
+    height: 26px;
+    border: solid 1px #ffffff;
+    background: unset;
+    border-radius: 4px;
+    margin-left: 8px;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #ffffff;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_item > div > div{
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_item > div > div > input[type="checkbox"]{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_item > div > div > label > img{
+    width: 130px;
+    /* height: 74px; */
+    margin: 0 19px 0 0;
+    border-radius: 5px;
+    border: solid 2px #e6e6e6;
+}
+.make_ai .make_ai_modeling > .make_ai_modeling_item > button{
+    float: right;
+    width: 110px;
+    height: 38px;
+    margin: 0 36px 0 7px;
+    background-color: #cbcbcb;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+    text-align: center;
+    color: #3d3d3d;
+}
+.make_ai .make_ai_model_edit{
+    background-color: #3d3d3d;
+    text-align: right;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video{
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    padding: 27.5px 30px 30px 48.5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid #313131;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > span {
+    display: inline-block;
+    position: relative;
+    margin-top: 26px;
+    height: auto;
+    width: 49%;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > .make_ai_model_edit_save_btn{
+    position: absolute;
+    right: 20px;
+    width: 72px;
+    height: 26px;
+    padding: 4px 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #ffffff;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > span > h1 {
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #ffffff;
+    top: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > span > h1 > span > button {
+    border: none;
+    background: unset;
+    padding: inherit;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > span > h1 > span > button.reset_btn{
+    width: 61px;
+    height: 26px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px 0 #000000;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #ffffff;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > span.make_ai_edit_items > div{
+    padding: 8px 30px 8px 13px;
+    background-color: #2e2e2e;
+    height: 100%;
+    overflow-y: auto;
+    text-align: left;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > span.make_ai_edit_items > div > div{
+    display: inline-block;
+    position: relative;
+    width: 109px;
+    /* height: 74px; */
+    margin: 0 1px 1px 0;
+    border-radius: 5px;
+    border: solid 2px #e6e6e6;
+    margin-right: 8px;
+    vertical-align: top;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > span.make_ai_edit_items > div > div > input[type="checkbox"]{
+    position: absolute;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > span.make_ai_edit_items > div > div > input[type="checkbox"] + label{
+    width: 100%;
+    height: 100%;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > span.make_ai_edit_items > div > div > input[type="checkbox"] + label > img{
+    width: 100%;
+    height: 100%;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > .make_ai_model_edit_link_video > span{
+    position: relative;
+    display: inline-block;
+    /* height: 270px; */
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > .make_ai_model_edit_link_video > span > img {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 5px;
+}
+
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > span > img:nth-child(2){
+    margin: 0;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > .make_ai_modeling_video_start{
+    position: absolute;
+    bottom: 30px;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > .make_ai_modeling_video_start > button[type="button"]{
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #ffffff;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_video > .make_ai_modeling_video_start > p{
+    margin: 11.3px 0 0.2px 8px;
+    font-family: AppleSDGothicNeo;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #cbcbcb;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item{
+    height: 366px;
+    padding: 13px 0 30px 48.5px;
+    background-color: #707070;
+    position: relative;
+}
+.make_ai_model_edit_item_time> input[type="text"]{
+    padding: 0 0 0 10px;
+    height: 28px;
+    width: 114px;
+    color: black;
+    margin-left: 10px;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > p{
+    font-size: 14px;
+    line-height: 3;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #ffffff;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > p > button{
+    height: 28px;
+    line-height: 20px;
+    padding: 4px 14px;
+    border: solid 0.5px #ffffff;
+    border-radius: 4px;
+    background: none;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #ffffff;
+    margin-left: 8px;
+}
+#edit_item_scrollbar{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 200px;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > #make_ai_model_edit_item_scroll::-webkit-scrollbar-thumb{
+    display: none;
+}
+/*.make_ai .make_ai_model_edit > .make_ai_model_edit_item > #make_ai_model_edit_item_scroll > .make_ai_model_edit_item_scroll_item{*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    width: 100px;*/
+/*    height: 40px;*/
+/*    line-height: 40px;*/
+/*    background-color: #000000;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*    bottom: 0;*/
+/*}*/
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > div:nth-child(2){
+    margin: 22px 0 22px -48.5px;
+    height: 123px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > div:nth-child(2) > div{
+    width: max-content;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > div:nth-child(2) > div > img{
+    width: 125px;
+    height: 70.1px;
+    margin: 0 24px 0 0;
+    border-radius: 5px;
+    border: solid 2px #cbcbcb;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > div:nth-child(2) > div > ul{
+
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > div:nth-child(2) > div > ul > li{
+    display: inline-block;
+    width: 125px;
+    margin-right: 24px;
+    font-size: 10px;
+    line-height: 1.6;
+    letter-spacing: -0.12px;
+    text-align: left;
+    color: #b4b4b4;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > div:nth-child(4) > p{
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > div:nth-child(4) > p > button[type="button"]{
+    height: 26px;
+    /*margin: 0 5.8px 0 12px;*/
+    padding: 4px 14px;
+    border: solid 0.5px #ffffff;
+    border-radius: 4px;
+    background: none;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #ffffff;
+}
+.make_ai .make_ai_model_edit > .make_ai_model_edit_item > div:nth-child(4) > img{
+    width: 130px;
+    height: 74px;
+    margin: 0 19px 0 0;
+    border-radius: 5px;
+    border: solid 2px #e6e6e6;
+}
+
+.context_back > li > button{
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 4px 8px;
+}
+
+/* @media screen and (max-width: 1366px){
+    .make_ai_model_edit_link_video{
+        display: none !important;
+    }
+} */
+
+
+.advertising_level{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.22px;
+    text-align: left;
+    color: #707070;
+    margin-bottom: 9px;
+}
+.advertising_level > span{
+    font-weight: bold;
+    color: #121212;
+}
+.advertising_level_next{
+    position: absolute;
+    right: 38px;
+    bottom: 22px;
+    height: 38px;
+    padding: 7px 40px;
+    background-color: #4d20a3;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.19px;
+    text-align: center;
+    color: #ffffff;
+}
+.advertising_number > button[type="button"]{
+    padding: 6px 19px 6px 20px;
+    border-radius: 5px;
+    border: solid 1px #b4b4b4;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+    text-align: center;
+    color: #b4b4b4;
+}
+.advertising_number > button[type="button"].selected{
+    border: solid 1px #4d20a3;
+    color: #4d20a3;
+}
+
+.make_ai_item_chk {
+    display: none;
+}
+
+@media screen and (max-width: 1320px){
+    .make_ai{
+        margin: 0 !important;
+    }
+}
+
+.make_ai .time_bar{
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: #ffffff;
+}
+.make_ai .time_bar > span{
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4px;
+    align-items: center;
+}
+.make_ai .time_bar > span > input[type="range"]{
+    position: absolute;
+    -webkit-appearance: none;
+    width: 85%;
+    height: 20px;
+    border-radius: 8px;
+    border: 1px solid #777777;
+    vertical-align: middle;
+    z-index: 0.5;
+    background: rgba(0, 0, 0, 0.4);
+    left: 7%;
+}
+.make_ai .time_bar > span > input[type="range"]::-webkit-slider-thumb{
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut{
+    position: relative;
+    text-align: right;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > h1{
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #ffffff;
+    width: 100%;
+    margin: 16px 0 14px 30px;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > div{
+    position: relative;
+    width: 95%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 30px;
+    text-align: left;
+    margin: 0 auto;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > div > div{
+    /* width: max-content; */
+    overflow-x: auto;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > div > div > div{
+    /* display: inline-block; */
+    width: 130px;
+    height: 74px;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 8px;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > div > div > div > div{
+    width: 100% !important;
+    margin-right: 3px;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > div > div > div > div > label > img{
+    width: 100%;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > div > div > div > div > label > input[type="checkbox"]{
+    position: absolute;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > div > div > div > div > label > input[type="checkbox"] + label{
+    width: 100%;
+    height: 100%;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > div > div > div > div > label > input[type="checkbox"] + label > img{
+    width: 100%;
+    height: 100%;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > button{
+    position: absolute;
+    background: none !important;
+    border: none;
+    width: 52px;
+    height: 70%;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > button:nth-child(2){
+    left: 6px;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > button:nth-child(4){
+    right: 6px;
+    bottom: 7px;
+}
+.make_ai .make_ai_model_edit > .make_ai_edit_stillcut > button > img{
+    width: 100%;
+    height: 100%;
+}
+.make_ai .make_ai_model_edit > button{
+    width: 110px;
+    height: 38px;
+    margin: 14px 35px 19px 0;
+    background-color: #cbcbcb;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.19px;
+    text-align: center;
+    color: #3d3d3d;
+    border: none;
+}
+
+.filterboxss{
+    border: "2px solid write";
+    background-color: white;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.16);
+    height: 166px;
+    width: 400px;
+    /*z-index: 999;*/
+    border-radius: 5px;
+    display: flex;
+}
+
+div > section > form > div > table:nth-child(2) > tr:nth-child(2) > td:nth-child(5) > div > div > ul{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.checkboxSearcher{
+    font-size: 10px;
+    line-height: 13px;
+    color:#a5a5a5;
+    display: flex;
+    font-family: NotoSansCJKKR;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2px;
+    position: absolute;
+    top:5px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+div > section > form > div > table:nth-child(2) > tr:nth-child(2) > td:nth-child(5) > div > div > ul > .chicecheckbox{
+    font-size: 10px;
+    line-height: 13px;
+    background-color: #f6f2ff;
+    border-radius: 5px;
+    display: flex;
+    font-family: NotoSansCJKKR;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2px;
+    position: absolute;
+    top:5px;
+    left:15px;
+    text-align: right;
+    color:#a5a5a5;
+    }
+.bordercheckboxSearchBox{
+    border:1px solid #a5a5a5;
+    width:10px;
+    height: 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 1px;
+    font-size: 15px;
+}
+.bordercheckboxcheck{
+    border:1px solid #a5a5a5;
+    background-color: #4d20a3;
+    width:10px;
+    height: 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 1px;
+    font-size: 15px;
+}
+
+
+
+
+div > section > form > div > table:nth-child(2) > tr:nth-child(2) > td:nth-child(5) > div > div > ul > li > .checkboxtext{
+    margin-left: 1px;
+    color:"#a5a5a5"
+}
+
+.checkboxsubmitSearchBox{
+    position: absolute;
+    bottom:5px;
+    right:5px;
+    cursor: pointer;
+    width: 50px;
+    height:20px;
+}
+
+
+.filltercheckbuttonOne{
+    border :solid 0.4px #4d20a3;
+    background-color: #4d20a3;
+    color:#ffffff;
+    width: 150px;
+    height: 35px;
+    border-radius: 17px;
+    margin-left:10px;
+
+}
+
+div > section > form > div > div:nth-child(4) > div > .filltercheckbuttonTwo{
+    border :solid 0.4px #4d20a3;
+    background-color: #4d20a3;
+    color:#ffffff;
+    width: 150px;
+    height: 35px;
+    border-radius: 17px;
+    display: none;
+    }
+
+    
+div > section > form > div > div:nth-child(4) > .stylednone{
+    display: none;
+    
+}
+
+
+.Aiboxtoll{
+font-size: 12px;
+border:0px solid black;
+width: 90px;
+background-color: #4d20a3;
+color:white;
+border-radius: 20px;
+padding-left: 7px;
+cursor: pointer;
+}
+.transBox{
+    font-size: 12px;
+    border:0px solid black;
+    width: 90px;
+    background-color: #4d20a3;
+    color:white;
+    border-radius: 20px;
+    padding-left: 7px;
+    cursor: pointer;
+}

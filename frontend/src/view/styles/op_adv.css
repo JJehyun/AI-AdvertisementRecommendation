@@ -1,0 +1,98 @@
+.op_adb_level{
+    margin-bottom: 25px;
+}
+.op_adb_level > li{
+    display: inline-block;
+    text-align: center;
+    height: 41px;
+    line-height: 41px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+    color: #707070;
+    cursor: pointer;
+}
+.op_adb_level > li:nth-child(1){
+    background: url('../images/common/level/op_adb/동영상\ 선택-비활.png') 100% 100% no-repeat;
+    width: 122px;
+    text-indent: -18px;
+}
+.op_adb_level > li:nth-child(2){
+    background: url('../images/common/level/op_adb/광고\ 타입\ 선택-비활.png') 100% 100% no-repeat;
+    width: 162px;
+    margin-left: -17px;
+}
+.op_adb_level > li:nth-child(1).selected{
+    background: url('../images/common/level/op_adb/동영상\ 선택-활.png') 100% 100% no-repeat;
+    color: #4d20a3;
+}
+.op_adb_level > li:nth-child(2).selected{
+    background: url('../images/common/level/op_adb/광고\ 타입\ 선택-활.png') 100% 100% no-repeat;
+    color: #4d20a3;
+}
+
+.op_adv_list {
+    overflow: unset !important;
+}
+.op_adv_list > ul:first-child {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0 20px 0;
+    border-bottom: solid 1px #e6e6e6;
+    margin-bottom: 23px;
+}
+.op_adv_list > ul:first-child > li:first-child {
+    display: inline-block;
+    text-align: center;
+    width: 23%;
+    min-width: 186px;
+    border: solid 1px #e6e6e6;
+    cursor: pointer;
+    padding-bottom: 12px;
+}
+.op_adv_list > ul > li > h1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.18px;
+    color: #121212;
+    margin: 23px 0 7px 0;
+}
+.op_adv_list > ul > li > p:nth-child(2) {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.16px;
+    color: #707070;
+    font-weight: 500;
+}
+.op_adv_list > ul > li > p:nth-child(3) {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.12px;
+    color: #cbcbcb;
+    margin-top: 21px;
+}
+.op_adv_list > .table-library > tbody > tr > td > div > div > button[type="button"] {
+    border: solid 1px #4d20a3;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.17px;
+    color: #4d20a3;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 14px;
+}
+.op_adv_list > .table-library > tbody > tr > td > select {
+    width: 78px;
+    height: 28px;
+    padding: 0 12px;
+    border: solid 1px #3d3d3d;
+    background-color: #ffffff;
+    font-family: NotoSansCJKkr;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #3d3d3d;
+}

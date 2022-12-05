@@ -1,0 +1,217 @@
+.join_module{
+    width: 34.4%;
+    /* height: 1207px; */
+    margin: 85px auto 26px auto;
+    padding: 50px 61px;
+    border: 1px solid #eee;
+    position: relative;
+}
+.join_module > h1{
+    width: 100%;
+    height: 37px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 0.92;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #121212;
+}
+.join_module label,
+.join_module input[type="email"],
+.join_module input[type="password"],
+.join_module input[type="text"]{
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    line-height: 3.29;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #121212;
+}
+.join_module label > span{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 3.29;
+    letter-spacing: -0.17px;
+    text-align: right;
+    color: #ff0000;
+}
+
+.join_module input[type="email"],
+.join_module input[type="password"],
+.join_module input[type="text"]{
+    width: 100%;
+    height: 40px;
+    border: solid 1px #dcdcdc;
+    padding-left: 18px;
+}
+.join_module input::placeholder {
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #b4b4b4;
+}
+.join_module p{
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.92;
+    letter-spacing: -0.14px;
+    text-align: left;
+}
+
+.join_module .join_id .join_id_value{
+    width: calc(100% - 82px) !important;
+    display: inline-block;
+}
+.join_module .join_id .join_id_auth{
+    float: right;
+    width: 82px;
+    height: 40px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 2.64;
+    letter-spacing: -0.13px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    background-color: #aaaaaa;
+    cursor: pointer;
+}
+.join_module p.ok_message{
+    color: #5388ff;
+}
+
+.join_module p.no_message{
+    color: #ff3a3a;
+}
+
+.join_module .join_auth{
+    margin-top: 16px;
+    margin-bottom: 54px;
+    font-size: 0;
+}
+.join_module .join_auth .auth_num{
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid;
+    width: 75%;
+    font-weight: 500;
+}
+.join_module .join_auth .auth_btn{
+    float: right;
+    width: 20%;
+    height: 40px;
+    background-color: #6b6b6b;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.64;
+    letter-spacing: -0.17px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+}
+
+.join_email{
+    font-size: 18px;
+    line-height: 1.28;
+    letter-spacing: -0.22px;
+    text-align: left;
+    color: #b4b4b4;
+}
+.join_email > input[type="text"],
+.join_email > select{
+    display: inline-block;
+    width: 31%;
+    height: 40px;
+    border: solid 1px #dcdcdc;
+    margin-bottom: 6px;
+}
+.join_email > select{
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #000000;
+    float: right;
+}
+
+.join_module .join_check{
+    width: 80%;
+    position: relative;
+    margin-top: 40px;
+}
+.join_module .join_check > div{
+    margin: 8px 0;
+}
+.join_module .join_check .join_all_check{
+    font-weight: 500;
+}
+.join_module .join_check > div > span{
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #7f7f7f;
+    position: absolute;
+    right: 0;
+}
+
+.join_module .join_check > div > input[type="checkbox"]{
+    display: none;
+}
+.join_module .join_check > div > input[type="checkbox"] + label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid #aaa;
+    position: relative;
+}
+.join_module .join_check > div > input[type="checkbox"] + label > span{
+    position: absolute;
+    top: -2px;
+    left: 24px;
+    width: 200px;
+    line-height: 1.64;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #121212;
+}
+.join_module .join_check > div > input[type="checkbox"]:checked + label{
+    background: url(../images/common/checked.PNG) no-repeat center/20px 20px;
+}
+
+/* 공용 */
+
+.join_btn{
+    display: block;
+    width: 198px;
+    height: 48px;
+    margin: 26px auto 25px;
+    background-color: #4d20a3;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.19px;
+    text-align: center;
+    color: #ffffff !important;
+    border: none;
+}
+
+.join_module + .footer{
+    position: relative !important;
+}
+
+@media screen and (max-width: 1280px){
+    .join_module .join_check > div > span{
+        display: none;
+    }
+    .join_module .join_auth .auth_btn{
+        font-size: 10px;
+    }
+}

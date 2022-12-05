@@ -1,0 +1,12 @@
+.Analyarrowimg{
+    border:1px solid #b4b4b4;
+    width:90px;
+    height:30px;
+    color:#b4b4b4;
+    font-size:14px;
+    margin-top:5px;
+    -webkit-appearance:none; /* 크롬 화살표 없애기 */
+    -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
+    appearance:none; /* 화살표 없애기 */
+    cursor: pointer;
+}

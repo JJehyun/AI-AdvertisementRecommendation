@@ -1,0 +1,629 @@
+
+.Loading{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    background: #000;
+    opacity: 0.8;
+}
+.Loading > .Loading_move{
+    width: 30%;
+    opacity: 1;
+}
+.Loading > .Loading_move.close{
+    width: 30%;
+    opacity: 0;
+    z-index: -1;
+}
+.Loading.close{
+    transition-delay: 3s;
+    opacity: 0;
+    z-index: -1;
+}
+.Loading > img{
+    width: 30%;
+}
+.Loading .NomalLoading{
+    width: 30% !important;
+}
+.Loading .BoshowLoading{
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    background: rgba(0, 0, 0, 0.8);
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -o-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    zoom: 1;
+    width: 100% !important;
+    position: absolute;
+    left: 0;
+}
+.Loading .BoshowLoading.none{
+    display: none;
+}
+.Boshow_player{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.Boshow_player button > img{
+    width: 50%;
+    height: 50%;
+}
+.landscape_player button > img{
+    width: 74%;
+    height: 74%;
+}
+.Boshow_player .advertise_img_type_a{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 3;
+}
+.Boshow_player .advertise_img_type_d{
+    width: 100%;
+    max-height: 80%;
+    background-color: #b4b4b4;
+}
+.advertise_type_a{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3;
+    width: 25%;
+    height: 12%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.advertise_type_a > button[type="button"]{
+    position: absolute;
+    top: 2px;
+    right: 9px;
+    font-size: 16px;
+    line-height: 0.9;
+    color: #121212;
+    font-weight: 600;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+.advertise_type_a > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.advertise_type_a > a > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+.advertise_type_a_open{
+    position: absolute;
+    right: 180px;
+    top: 10px;
+    z-index: 101;
+    width: 25%;
+    height: 12%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.Boshow_player .advertise_type_b_close{
+    position: fixed;
+    right: 2%;
+    bottom: 44%;
+    color: #fff;
+}
+.Boshow_player button{
+    background: none;
+    border: none;
+    padding: 0;
+    width: fit-content;
+}
+.Boshow_player * {
+    -webkit-user-select: none;
+    user-select: none;
+}
+.Boshow_player > div{
+    position: relative;
+    width: 100%;
+    min-height: 175px;
+    z-index: 1;
+    display: flex;
+    /* align-items: center; */
+    /* overflow-y: hidden; */
+}
+.Boshow_player > div > #adbElement{
+    width: 100%;
+    height: 100%;
+}
+.Boshow_player > div > video,
+.Boshow_player > div > div:nth-child(2),
+.Boshow_player > div > div:nth-child(2) > iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.Boshow_player > div > div:nth-child(2) > iframe + div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.Boshow_player > .orientation_guide{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    top: 100px;
+    width: 274px;
+    left: calc(50% - 137px);
+    z-index: 0;
+    transition-delay: 5s;
+}
+.Boshow_player > .orientation_guide > img{
+    width: 100%;
+}
+.landscape_player > .orientation_guide{
+    display: none;
+}
+.Boshow_player > div > div > #adb_d{
+    background-color: #383838;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 38%;
+    z-index: 7;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    padding: 3.5% 2.5% 0 2.5%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    transition: 0.5s;
+    top: 100%;
+}
+.Boshow_player > div > div > #adb_d.onAdb_type_d{
+    top: 62%;
+}
+.Boshow_player > div > div > #adb_d > ul{
+    width: max-content;
+    height: calc(100% - 60px);
+    background-color: #383838;
+    overflow-x: scroll;
+    position: absolute;
+    border: 0;
+}
+.Boshow_player > div > div > #adb_d > ul > li > a > img{
+    margin-bottom: 4px;
+}
+.Boshow_player > div > div > #adb_d > ul > li{
+    display: inline-block;
+    width: 305px;
+    height: 100%;
+    list-style: none;
+    margin-right: 25px;
+}
+.Boshow_player > div > div > #adb_d > ul > li > a > img{
+    width: unset;
+    min-width: 224px;
+    margin-bottom: 9%;
+    height: 126px;
+}
+.Boshow_player > div > div > #adb_d > ul > li > a > div{
+    color: #fff;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Boshow_player > div > .controls{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    transition: 0.2s;
+    opacity: 1;
+}
+.Boshow_player > div > .controls.close{
+    opacity: 0;
+    z-index: -1;
+}
+.Boshow_player > div > .controls > .play_pause_btn{
+    margin: 0 10%;
+}
+.Boshow_player > div > .controls input[type=range]:focus{
+    /* background-color: #EDD9FF; */
+    outline: none;
+    border: none;
+}
+.Boshow_player > div > .controls input[type="range"]::-webkit-slider-thumb{
+    height: 30px;
+    width: 30px;
+	background-color: #EDD9FF;
+	border: none;
+}
+.Boshow_player > div > .controls input[type="range"]{
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+}
+.Boshow_player > div > .controls > .Boshow_ctrl{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Boshow_player > div > .controls > .Boshow_ctrl_vertical{
+    height: 24%;
+}
+.Boshow_player > div > .controls > .Boshow_ctrl > .time_bar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.Boshow_player > div > .controls > .Boshow_top_botton{
+    position: fixed;
+    top: 20px;
+    left: 26px;
+    right: 26px;
+    z-index: 36;
+    width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.Boshow_player > div > .controls > .Boshow_top_botton > .Boshow_player_close_btn{
+    cursor: pointer;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    /* font-size: 24px; */
+    margin-left: -21px;
+}
+.Boshow_player > div > .controls > .Boshow_top_botton > .Boshow_player_close_btn > img{
+    width: 50%;
+    height: 50%;
+}
+/* .landscape_player > div > .controls > .Boshow_top_botton > .Boshow_player_close_btn{
+    font-size: 24px;
+} */
+/* .landscape_player > div > .controls > .Boshow_top_botton > .Boshow_player_close_btn > img{
+    width: 20%;
+} */
+.Boshow_player > div > .controls > .Boshow_top_botton > .Boshow_player_pip_btn{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.Boshow_player > div > .controls > .Boshow_ctrl > .time_bar > .time{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 24px;
+}
+.Boshow_player > div > .controls > .Boshow_ctrl > .time_bar > .time > span{
+    color: white;
+    font-size: 12px;
+}
+.Boshow_player > div > .controls > .Boshow_ctrl > .time_bar > .time > input[type="range"]{
+    margin: 0 8px;
+}
+.Boshow_player > div > .controls input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.25);
+}
+.Boshow_player > div > .controls input[type=range]:focus::-webkit-slider-runnable-track{
+    background: #8460f4;
+}
+
+/*Chrome*/
+.Boshow_player > div > .controls input[type="range"] {
+    --webkitProgressPercent: 0%
+}
+.Boshow_player > div > .controls input[type="range"]::-webkit-slider-runnable-track {
+    /* background: red; */
+    background: linear-gradient(
+      90deg,
+      #8460f4 var(--webkitProgressPercent),
+      rgba(255,255,255, 0.4) var(--webkitProgressPercent)
+      /* red 50%,0
+      blue 50% */
+    );
+}
+
+/** FF*/
+.Boshow_player > div > .controls input[type=range]::-moz-range-progress {
+  background-color: #8460f4; 
+}
+.Boshow_player > div > .controls input[type=range]::-moz-range-track {  
+  background-color: rgba(255, 255, 255, 0.25);
+}
+/* IE*/
+.Boshow_player > div > .controls input[type=range]::-ms-fill-lower {
+  background-color: #8460f4; 
+}
+.Boshow_player > div > .controls input[type=range]::-ms-fill-upper {  
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.Boshow_player > div > .controls input[type=range]::-webkit-slider-thumb {
+    border-radius: 100%;
+    border: 1px solid #fff;
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px; /*chrome의 경우 margin-top값을 부여해야합니다.*/
+    /* box-shadow: -15px 0 0 15px #8460f4; */
+}
+/*Firefox의 경우*/
+.Boshow_player > div > .controls input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: #2497E3;
+}
+.Boshow_player > div > .controls input[type=range]::-moz-range-thumb {
+    border: 1px solid #2497E3;
+    height: 15px;
+    width: 10px;
+    background: #EDD9FF;
+    cursor: pointer;
+}
+.Boshow_player > div > .controls > .Boshow_ctrl > .time_bar > .time > input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: unset;
+    background: #edd9ff;
+    transition: 1s;
+}
+.Boshow_player > div > .controls > .Boshow_ctrl > .time_bar > .time > input[type=range].time_range_touched::-webkit-slider-thumb{
+    background: url('../images/Boshow_player/Boshow_slider.png') 100% 100% / contain no-repeat;
+    margin-top: -25px;
+    height: 50px;
+    width: 50px;
+}
+.Boshow_player > div > .controls > .light_bar{
+    position: fixed;
+    left: 0;
+    /* display: grid; */
+}
+.Boshow_player > div > .controls > .light_bar > input[type="range"]{
+    width: unset;
+    transform: rotate(270deg);
+}
+.Boshow_player > div > .controls > .light_bar > button,
+.Boshow_player > div > .controls > .light_bar > input[type="range"]{
+    width: 42px;
+}
+.Boshow_player > div > .controls > .sound_bar{
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+.Boshow_player > div > .controls > .sound_bar > .mute_unmute_btn{
+    position: absolute;
+    left: 40%;
+    top: -85px;
+}
+.Boshow_player > div > .controls > .sound_bar > input[type="range"]{
+    width: unset;
+    transform: rotate(270deg);
+    width: 115px;
+}
+.Boshow_player > div > .controls > .sound_bar > button,
+.Boshow_player > div > .controls > .sound_bar > input[type="range"]{
+    display: block;
+}
+
+.Boshow_player > div > .controls > .Boshow_ctrl > .Boshow_ctrl_bar{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.Boshow_player > div > .controls > .Boshow_ctrl > .Boshow_ctrl_bar > button{
+    /* color: #ffffff;
+    height: 50px;
+    line-height: 40px; */
+}
+/* .Boshow_player > div > .controls > .Boshow_ctrl > .Boshow_ctrl_bar > button > img:nth-child(1){
+    float: left;
+} */
+.Boshow_player > div > .controls > .Boshow_ctrl > .Boshow_ctrl_bar > button.fullScreen{
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    left: calc(50% - 90px);
+}
+.Boshow_player > div > .controls > .Boshow_ctrl > .Boshow_ctrl_bar > .boshow_on{
+    transition: 1s;
+    position: absolute;
+    left: calc(50% - 20px);
+}
+.Boshow_player > div > .controls > .Boshow_ctrl > .Boshow_ctrl_bar > .boshow_on.close{
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+}
+.Boshow_player .fullScreenland_Btn{
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 90px);
+    width: 180px;
+}
+.Boshow_player .fullScreenBtn{
+    float: right;
+    margin-right: 5%;
+}
+@media screen and (orientation: landscape) {
+    .Boshow_player > div{
+        height: 100%;
+    }
+}
+@keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-20px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+@keyframes bounce {
+    0%   { -webkit-transform: scale(1,1)      translateY(0); }
+    10%  { -webkit-transform: scale(1.1,.9)   translateY(0); }
+    30%  { -webkit-transform: scale(.9,1.1)   translateY(-20px); }
+    50%  { -webkit-transform: scale(1.05,.95) translateY(0); }
+    57%  { -webkit-transform: scale(1,1)      translateY(-7px); }
+    64%  { -webkit-transform: scale(1,1)      translateY(0); }
+    100% { -webkit-transform: scale(1,1)      translateY(0); }
+}
+
+
+.Boshow_player .grapBoshow{
+    display: contents !important;
+}
+.Boshow_player .grapBoshow .draggable{
+    top: -10%;
+    width: 100%;
+    height: 20%;
+    padding: 0;
+    visibility: visible;
+}
+/* .pane{
+    opacity: 0;
+    z-index: -1;
+} */
+.Boshow_player .grapBoshow .draggable > .move{
+    background: url('../images/Boshow_player/Boshow_Logo.png') 100% 100% / contain no-repeat;
+    background-position: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.Boshow_player .grapBoshow .bounce{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+}
+.Boshow_player .swiper-container{
+    height: 100%;
+}
+.Boshow_player .cupertino-pane{
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    width: 100% !important;
+    /* margin-top: 1.5%; */
+    /* position: absolute; */
+    bottom: 0;
+    height: 90% !important;
+    z-index: 30;
+    /* background: url('../images/Boshow_player/Boshow_advertise_bar.png') 50% 100% / cover no-repeat !important; */
+}
+.Boshow_player .cupertino-pane.hide{
+    z-index: 30;
+    display: block !important;
+}
+.Boshow_player .cupertino-pane > ul{
+    width: max-content;
+    margin: 0 2.3%
+}
+.Boshow_player .cupertino-pane > ul > li{
+    display: inline-block;
+    margin-right: 20px;
+    height: unset;
+    float: left;
+}
+.Boshow_player .cupertino-pane > ul > li > a > img{
+    width: 100%;
+}
+.Boshow_player .cupertino-pane > ul > li > a > div{
+    font-size: 11px;
+    font-weight: 100;
+    color: #fff;
+    margin: 6px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.Boshow_player .cupertino-pane > ul > li > a > div:nth-child(3){
+    color: #b181f4;
+    font-weight: 600;
+}
+.Boshow_player .cupertino-pane-wrapper{
+    top: 0;
+    bottom: 0;
+}
+.Boshow_player .cupertino-pane-wrapper .pane{
+    background: url('../images/Boshow_player/Boshow_advertise_bar.png') 50% 100% / cover no-repeat !important;
+    top: 0 !important;
+    max-width: unset !important;
+    opacity: 0;
+    z-index: -1;
+}
+
+.Boshow_player .bounce_btn{
+    position: absolute;
+    bottom: -35px;
+    width: 40px;
+    left: calc(50% - 20px);
+    z-index: 99999;
+}
+.Boshow_player .bounce {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+.only_top{
+    z-index: 90000 !important;
+}
+
+.Boshow_player .swiper-slide div{
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+    margin-top: 4px;
+    text-align: center;
+}

@@ -1,0 +1,139 @@
+.list_search{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 0 18px 0;
+    padding: 0 0 20px 0;
+    border: solid 1px #cbcbcb;
+    background-color: #fff;
+}
+.list_search > div:nth-child(1),
+.list_search > table{
+    padding: 0 0 0 16px;
+}
+.list_search > div:nth-child(1){
+    height: 42px;
+    line-height: 42px;
+    border-bottom: solid 1px #cbcbcb;
+    font-size: 16px;
+    font-weight: 600;
+    color: #121212;
+}
+.list_search > table{
+    border-collapse: separate;
+    padding-top: 13px;
+    width: 80%;
+    min-width: 664px;
+}
+.list_search > table > tr > td{
+    font-size: 14px;
+    line-height: 2.25;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: #121212;
+    position: relative;
+    font-weight: 600;
+}
+.list_search > table > tr > td.search_date{
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #b4b4b4;
+}
+.list_search > table > tr > td.search_date > input[type="text"]:nth-child(1){
+    margin-right: 8px;
+}
+.list_search > table > tr > td.search_date > input[type="text"]:nth-child(2){
+    margin-left: 8px;
+}
+.list_search > table > tr > td > input[type="text"],
+.list_search > table > tr > td > div > div > input[type="text"]{
+    width: 104px;
+    height: 30px;
+    padding: 0 0 0 10px;
+    border: solid 1px #cbcbcb;
+    background-color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #6b6b6b;
+}
+.list_search > table > tr > td > input[type="text"].title{
+    width: 220px;
+}
+.list_search > table > tr > td >  button.search_filter{
+    width: 58px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    border: solid 1px #cbcbcb;
+    background-color: #Fff;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #121212;
+}
+.list_search > table > tr > td >  button.search_filter > img{
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+.list_search > .search_btn_group{
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+}
+.list_search > .search_btn_group > input[type="submit"]{
+    width: 110px;
+    height: 38px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.19px;
+    text-align: center;
+    border: solid 1px #4d20a3;
+    background-color: #4d20a3;
+    margin-right: 12px;
+}
+.list_search > .search_btn_group > button{
+    width: 110px;
+    height: 38px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    letter-spacing: -0.19px;
+    text-align: center;
+    border: solid 1px #4d20a3;
+    color: #4d20a3;
+}
+.list_search > .search_btn_group > button.search_btn{
+    background-color: #4d20a3;
+    color: #fff;
+    margin-right: 15px;
+}
+.search_guide{
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #b4b4b4;
+    margin-left: 26px;
+}
+.react-datepicker__tab-loop{
+    display: inline-block;
+}
+.list_search > table > tr > td > select{
+    width: 150px;
+    height: 30px;
+    margin: 5px 0 0;
+    padding: 5px 6px 5px 7px;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+}
+
+.asd{
+    height: 15px;
+    line-height: 42px;
+    border-bottom: solid 1px #cbcbcb;
+    font-size: 16px;
+    font-weight: 600;
+    color: #121212;
+}

@@ -1,0 +1,647 @@
+.user_support_type {
+    margin-bottom: 26px;
+}
+.user_support_type > li {
+    display: inline-block;
+}
+.user_support_type > li > button[type="button"] {
+    width: 108px;
+    height: 38px;
+    border-radius: 5px;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+    margin-right: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.17px;
+    text-align: center;
+    color: #cbcbcb;
+}
+.user_support_type > li > button[type="button"].selected {
+    color: #4d20a3;
+    border-color: #4d20a3;
+}
+/* user_modify */
+.user_modify{
+    width: 100%;
+    max-width: 1280px;
+    margin: 26px 0 0;
+    padding: 20px 0 49px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 12%);
+    background-color: #ffffff;
+}
+.user_modify > div > table tr > th {
+    font-size: 12px;
+    line-height: 3.5;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: #7f7f7f;
+}
+.user_modify > div > table tr > td > input[type="text"],
+.user_modify > div > table tr > td > input[type="password"] {
+    width: 100%;
+    height: 45px;
+    padding-left: 8px;
+    border-radius: 5px;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #121212;
+}
+.user_modify > div > table tr > td > input[type="text"]:read-only,
+.user_modify > div > table tr > td > input[type="password"]:read-only {
+    background-color: #f7f7f7;
+    color: #a5a5a5;
+}
+.user_modify > div{
+    position: relative;
+}
+.user_modify > .user_modify_top{
+    padding: 0 37px 34px;
+    border-bottom: 1px solid #c3c3c3;
+}
+.user_modify > .user_modify_top > table{
+    border-collapse: separate;
+    border-spacing: 31px 0;
+    margin-left: -31px;
+}
+.user_modify > .user_modify_bottom {
+    padding: 27px 37px 0;
+}
+.user_modify > .user_modify_bottom > table {
+    border-collapse: separate;
+    border-spacing: 15px 0;
+    margin-left: -15px;
+}
+.user_modify > .user_modify_bottom > table tr > td > input[type="text"],
+.user_modify > .user_modify_bottom > table tr > td > input[type="password"]{
+    width: 300px;
+}
+.user_modify .user_support_submit_btn {
+    position: absolute;
+    right: 46px;
+    top: 0;
+}
+.user_modify .user_support_submit_btn > button {
+    width: 75px;
+    height: 24px;
+    margin-left: 22px;
+    background-color: #b4b4b4;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    text-align: center;
+    color: #ffffff;
+}
+.user_modify .user_support_submit_btn > .user_submit {
+    background-color: #3d3d3d;
+}
+
+.user_notification {
+    padding: 0 32px;
+}
+.user_notification > table tr > th {
+    font-size: 16px !important;
+    font-weight: 600;
+    letter-spacing: -0.19px !important;
+    color: #121212 !important;
+}
+
+.user_notification .switch-button {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 18px;
+    margin-left: 12px;
+    margin-right: 18px;
+}
+.user_notification .switch-button input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.user_notification .onoff-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0; 
+    border-radius:20px; 
+    background-color: #ccc; 
+    box-shadow: inset 1px 5px 1px #999; 
+    -webkit-transition: .4s; 
+    transition: .4s; 
+} 
+.user_notification .onoff-switch > .on_txt {
+    margin-left: 4px;
+    font-size: 11px;
+    letter-spacing: -0.12px;
+    color: #ffffff;
+}
+.user_notification .onoff-switch > .off_txt {
+    margin-left: 20px;
+    font-size: 11px;
+    letter-spacing: -0.12px;
+    color: #ffffff;
+}
+.user_notification .onoff-switch:before { 
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 1px;
+    bottom: 1px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 20px;
+}
+.user_notification .switch-button input:checked + .onoff-switch {
+    background-color: #4d20a3;
+    box-shadow: inset 1px 5px 1px #4d20a3;
+}
+.user_notification .switch-button input:checked + .onoff-switch:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.user_trashcan{
+    padding: 0 40px;
+}
+.user_trashcan > h1{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2.63;
+    letter-spacing: -0.19px;
+    text-align: left;
+    color: #121212;
+}
+.user_trashcan > h1 > span{
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: #a5a5a5;
+    margin-left: 19px;
+}
+.user_trashcan > div > ul {
+    margin: 17px 0 27px;
+}
+.user_trashcan > div > ul > li {
+    display: inline-block;
+}
+.user_trashcan > div > ul > li > button {
+    width: 78px;
+    height: 30px;
+    margin-right: 11px;
+    border-radius: 15px;
+    border: solid 1px #c3c3c3c3;
+    background-color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #b4b4b4;
+}
+.user_trashcan > div > ul > li > button.selected{
+    border-color: #4d20a3;
+    color: #4d20a3;
+}
+.user_trashcan > div > .user_trashcan_table > ul {
+    margin-top: -55px;
+    text-align: right;
+}
+.user_trashcan > div > .user_trashcan_table > ul > li {
+    display: inline-block;
+    position: relative;
+}
+.user_trashcan > div > .user_trashcan_table > ul > li:nth-child(1) > input[type="text"]{
+    width: 351px;
+    height: 30px;
+    padding-left: 10px;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+}
+.user_trashcan > div > .user_trashcan_table > ul > li:nth-child(1) > button[type="button"]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    border: none;
+    background-color: #a5a5a5;
+}
+.user_trashcan > div > .user_trashcan_table > ul > li:nth-child(2) > button[type="button"]{
+    vertical-align: middle;
+    width: 75px;
+    height: 24px;
+    background-color: #3d3d3d;
+    border: none;
+    border-radius: 12px;
+    font-size: 11px;
+    letter-spacing: -0.14px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 12px;
+}
+.user_trashcan > div > .user_trashcan_table > div > table{
+    width: 100%;
+    margin-top: 18px;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > thead{
+    height: 49px;
+    line-height: 49px;
+    margin: 18px 0.5px 102px 0;
+    padding: 13px 639px 15px 21px;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-align: left;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > thead > tr > th{
+    color: #6b6b6b;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr{
+    vertical-align: middle;
+    border-bottom: 1px solid #c3c3c3;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr.selected{
+    width: 100%;
+    background-color: #f6f2ff;
+}
+.user_trashcan > div > .user_trashcan_table > div > .table-library > thead tr th label{
+    margin-left: 20px;
+}
+.user_trashcan > div > .user_trashcan_table > div > .table-library > thead tr th input[type="checkbox"],
+.user_trashcan > div > .user_trashcan_table > div > table > tbody input[type="checkbox"]{
+    display: none;
+}
+.user_trashcan > div > .user_trashcan_table > div > .table-library > thead tr th input[type="checkbox"] + label,
+.user_trashcan > div > .user_trashcan_table > div > table > tbody input[type="checkbox"] + label {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 1px;
+    border: 1px solid;
+    box-shadow: 1px 1px grey inset;
+    position: relative;
+}
+.user_trashcan > div > .user_trashcan_table > div > .table-library > thead tr th input[type="checkbox"]:checked + label,
+.user_trashcan > div > .user_trashcan_table > div > table > tbody input[type="checkbox"]:checked + label {
+    background: url('../images/common/checked.PNG') no-repeat center/100% 100%;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr > td,
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr > td > img + span,
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr > td > img + span > p{
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    text-align: left;
+    vertical-align: middle;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr > td:first-child{
+    text-align: center;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr > td.trashcan_no_item{
+    height: 50px;
+    vertical-align: middle;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr > td.menu_title{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr > td > img {
+    flex: 0 0 75px;
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
+    margin: 14px 0 14px 0;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr > td > span {
+    flex: 1 1 0;
+    display: inline-block;
+    margin-left: 8px;
+}
+.user_trashcan > div > .user_trashcan_table > div > table > tbody > tr > td > img + span > p:nth-child(2){
+    font-size: 10px;
+    letter-spacing: -0.12px;
+    text-align: left;
+    color: #b4b4b4;
+    line-height: 1.6;
+    font-weight: 100;
+}
+
+/* user_support_board */
+.user_support_board {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 0 96px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 12%);
+    background-color: #ffffff;
+    position: relative;
+}
+.user_support_board > select{
+    position: absolute;
+    right: 0;
+    top: -60px;
+    width: 134px;
+    height: 38px;
+    padding: 9px 14px 9px 11px;
+    border: solid 1px #c3c3c3;
+    background-color: #fff;
+}
+.user_support_board table,
+.user_support_board_write > div > table
+{
+    border-collapse: unset;
+    width: 100%;
+}
+.user_support_board table > thead > tr{
+    height: 48px;
+}
+.user_support_board table > thead > tr > th{
+    vertical-align: middle;
+    border-bottom: 1px solid #c3c3c3;
+}
+.user_support_board table > tbody > tr{
+    height: 73px;
+}
+.user_support_board table > tbody > tr > th,
+.user_support_board table > tbody > tr > td{
+    vertical-align: middle;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-align: center;
+    color: #000000;
+    border-bottom: 1px solid #c3c3c3;
+}
+.user_support_board table > tbody > tr > td[class="user_support_board_answer"]{
+    text-align: center !important;
+}
+.user_support_board_write{
+    position: relative;
+}
+.user_support_board_write > div{
+    background: #ffffff;
+    border: 1px solid #c3c3c3;
+    width: 100%;
+    max-width: 1280px;
+}
+.user_support_board_write > div > table > thead > tr > th{
+    width: 124px;
+    height: 51px;
+    border-right: solid 1px #c3c3c3;
+    border-bottom: solid 1px #c3c3c3;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+    box-sizing: content-box;
+}
+.user_support_board_write > div > table > thead > tr > td{
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #000000;
+    vertical-align: middle;
+    padding-left: 18px;
+    border-bottom: 1px solid #c3c3c3;
+}
+.user_support_board_write .user_support_board_write_main{
+    position: relative;
+    height: 470px;
+    vertical-align: top;
+    padding-top: 30px;
+}
+.user_support_board_write .user_support_board_write_main > button{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 124px;
+    height: 40px;
+    background-color: #322b4d;
+    border: none;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.23px;
+    color: #ffffff;
+}
+.user_support_board_write_prevnext{
+    margin-top: 12px;
+}
+.user_support_board_write_prevnext > p{
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #000000;
+    padding-left: 20px;
+}
+.user_support_board_write_prevnext > p:nth-child(2){
+    border-top: 1px solid #c3c3c3;
+}
+.user_support_board_write_prevnext > p > span{
+    margin-right: 42px;
+}
+
+.user_support_board_answer{
+    text-align: center !important;
+    /*padding: 24px 0 !important;*/
+    line-height: 2 !important;
+}
+.user_support_board_answer > p{
+    padding: 20px 0 24px 0 !important;
+    text-align: left;
+}
+
+.user_support_board_answer > .user_support_board_answer_add > input[type="text"]{
+    width: 80%;
+    padding: 10px 0 10px 10px;
+    border: solid 1px #cbcbcb;
+    background-color: #ffffff;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #6b6b6b;
+}
+.user_support_board_answer > .user_support_board_answer_add > button[type="button"]{
+    width: 110px;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 12px;
+    background-color: #fff;
+    letter-spacing: -0.19px;
+    text-align: center;
+    border: solid 1px #4d20a3;
+    color: #4d20a3;
+}
+.user_support_board_insert{
+    width: 124px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: #322b4d;
+    border: none;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.23px;
+    color: #ffffff;
+    z-index: 2;
+    position: absolute;
+    right: 10px;
+}
+
+.user_support_board_write > div > .insert_QnA > thead > tr:nth-child(1) > td > select{
+    width: 134px;
+    height: 30px;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+    margin: 12px 0;
+}
+.user_support_board_write > div > .insert_QnA > thead > tr:nth-child(1) > td > input[type="text"]{
+    width: 750px;
+    height: 30px;
+    margin: 0 0 12px;
+    padding: 5px 0 7px 10px;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+}
+.user_support_board_write > div > .insert_QnA > thead > tr:nth-child(2) > td > textarea{
+    resize: none;
+    width: 750px;
+    height: 270px;
+    margin: 12px 0;
+    padding: 5px 0 7px 10px;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+}
+.user_support_board_write > div > .insert_QnA > thead > tr:nth-child(3) > td > span:nth-child(1){
+    width: 72px;
+    height: 26px;
+    margin: 0 16px 15px 0;
+    padding: 4px 14px;
+    border-radius: 6px;
+    border: solid 0.5px #a5a5a5;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 3.5;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: #a5a5a5;
+}
+.user_support_board_write > div > .insert_QnA > thead > tr:nth-child(3) > td > div{
+    width: 750px;
+    height: 130px;
+    margin: 0 0 42px 1px;
+    padding: 9px 0 0 14px;
+    border: solid 1px #c3c3c3;
+    background-color: #ffffff;
+}
+.user_support_board_write > div > .insert_QnA > thead > tr:nth-child(3) > td > div > p{
+    line-height: 1.5;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #313131;
+}
+.user_support_board_write > div > .insert_QnA > thead > tr:nth-child(3) > td > div > p > button{
+    background-color: inherit;
+    border: 1px solid #c3c3c3;
+    border-radius: 4px;
+    margin-left: 12px;
+    font-size: 8px;
+}
+
+.user_support_board_write > div > .insert_QnA > thead > tr:nth-child(3) > td > button[type="button"]{
+    position: absolute;
+    right: 24px;
+    bottom: 12px;
+    width: 110px;
+    height: 38px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    letter-spacing: -0.19px;
+    text-align: center;
+    border: solid 1px #4d20a3;
+    color: #4d20a3;
+}
+.UserImgChange{
+width: 58px;
+height: 58px;
+border: 0px solid black;
+border-radius: 50%;
+position:relative;
+top:18px;
+}
+.IMGCameraDIV{
+width: 20px;
+height:20px;
+position: absolute;
+bottom:-16px;
+left: 0px;
+border: 0px solid black;
+background-color: #f7f7f7;
+border-radius: 50%;
+opacity: 0.6;
+}
+.IMGCamer{
+width: 15px;
+height: 15px;
+margin-left: 2px;
+margin-top: 2px;
+}
+
+
+/*ai_setting*/
+.ai_setting > table {
+    width: 634px;
+    margin-left: 35px;
+}
+.ai_setting > table > tr > th {
+    font-size: 14px !important;
+    line-height: 3;
+    letter-spacing: -0.17px !important;
+    text-align: left !important;
+    color: #7f7f7f !important;
+}
+.user_modify .ai_setting > table tr > td > input[type="text"] {
+    width: 95%;
+}
+.user_modify .ai_setting > table tr > td > span {
+    position: relative;
+    right: 30px;
+    font-size: 14px;
+    line-height: 3;
+    letter-spacing: -0.17px;
+    color: #a5a5a5;
+    z-index: 100;
+}
+.user_modify .ai_setting_submit_btn {
+    position: absolute;
+    right: 46px;
+    top: 0;
+}
+.user_modify .ai_setting_submit_btn > button {
+    width: 75px;
+    height: 24px;
+    margin-left: 22px;
+    background-color: #3d3d3d;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    text-align: center;
+    color: #ffffff;
+}

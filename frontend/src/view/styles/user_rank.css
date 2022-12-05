@@ -1,0 +1,57 @@
+.user_rank_save{
+    position: absolute;
+    right: 0;
+    height: 38px;
+    padding: 7px 40px;
+    background-color: #4d20a3;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+    text-align: center;
+    color: #ffffff;
+}
+.user_rank_frame{
+    overflow: auto;
+}
+.user_rank{
+    width: 100%;
+}
+.user_rank > thead > tr{
+    height: 50px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #c3c3c3;
+}
+.user_rank > thead > tr > th,
+.user_rank > tbody > tr > td{
+    padding-left: 26px;
+    vertical-align: middle;
+}
+.user_rank > thead > tr > th{
+    position: sticky;
+    top: 0px;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #6b6b6b;
+    background-color: #f7f7f7;
+}
+.user_rank > tbody > tr{
+    border-bottom: 1px solid #c3c3c3;
+}
+.user_rank > tbody > tr > td{
+    height: 74px;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #000000;
+}
+.user_rank > tbody > tr > td > select{
+    width: 68px;
+    height: 28px;
+    border: 1px solid #c3c3c3;
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    text-align: left;
+    color: #000000;
+}

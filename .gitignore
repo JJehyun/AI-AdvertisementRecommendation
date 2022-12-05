@@ -1,0 +1,8 @@
+frontend/node_modules/
+djangoreactapi/backend/model
+djangoreactapi/backend/tb/ai/model/detect.pt
+djangoreactapi/backend/Upload_image/
+djangoreactapi/backend/node_modules/
+djangoreactapi/backend/media/
+djangoreactapi/backend/tb/static/
+__pycache__

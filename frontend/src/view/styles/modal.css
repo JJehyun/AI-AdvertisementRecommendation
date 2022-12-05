@@ -1,0 +1,645 @@
+/* login_alert_modal */
+.login_alert_modal {
+    position: fixed;
+    top: 10px;
+    width: 360px;
+    height: fit-content;
+    left: calc(50% - 180px);
+    padding: 37px 32px 37px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
+}
+.login_alert_modal > .content {
+    font-size: 14px;
+    line-height: 1.64;
+    font-weight: 500;
+    letter-spacing: -0.17px;
+    text-align: center;
+    color: #000000;
+}
+.login_alert_modal > .content > button[type="button"]{
+    background-color: #b4b4b4;
+    border: none;
+    width: 100%;
+    height: 34px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.19px;
+}
+
+/* alert_modal */
+.modal > .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.alert_modal {
+    position: fixed;
+    top: 38%;
+    width: 360px;
+    height: fit-content;
+    left: calc(50% - 180px);
+    padding: 25px 32px 25px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
+    border: 1px solid black;
+}
+.alert_modal > .content {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: -0.17px;
+    text-align: center;
+    color: #000000;
+}
+.alert_modal > .content > button[type="button"]{
+    border: 1px solid #4d20a3;
+    width: 50%;
+    height: 40px;
+    margin-top: 15px;
+    color: #4d20a3;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.19px;
+}
+
+/* searchModal */
+.searchModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchModal > main > div{
+    width: 800px;
+    height: 574px;
+    background-color: #f7f7f7;
+}
+.searchModal > main > header{
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 12%);
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: -0.24px;
+    color: #000;
+    padding: 0 23px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchModal > main > header > button{
+    border: none;
+    background-color: inherit;
+    font-size: 48px;
+}
+.searchModal > main > div > .btn_line > button[type="button"]{
+    width: 95px;
+    height: 36px;
+    margin: 22px 15px 0 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: #a5a5a5;
+    border: solid 1px #313131;
+    background-color: #6b6b6b;
+}
+.searchModal > main > div > .btn_line > button[type="button"].selected{
+    color: #fff;
+    border: solid 1px #fff;
+    background-color: #a5a5a5;
+}
+.searchModal > main .search{
+    display: inline-block;
+    position: relative;
+    width: calc(100% - 90px);
+    margin: 25px 0 18px 41px;
+    padding: 0;
+}
+.searchModal > main .search > input[type="text"]{
+    width: calc(100% - 102px);
+    height: 46px;
+    border: solid 1px #c6c6c6;
+    color: #000;
+    padding: 12px;
+    background-color: #fff;
+}
+.searchModal > main .search > input[type="text"]::placeholder{
+    color: #6b6b6b;
+}
+.searchModal > main .search > button[type="button"]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 102px;
+    border: none;
+    background-color: #a5a5a5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.searchModal > main .preview{
+    margin: 0 49px 0 41px;
+    height: 400px;
+}
+.searchModal > main .preview > p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    letter-spacing: -0.19px;
+    color: #a5a5a5;
+}
+.searchModal > main .preview > div,
+.searchModal > main .preview > video{
+    width: 100%;
+    height: 330px;
+    margin-bottom: 30px;
+}
+.searchModal > main .preview > div{
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchModal > main .preview > div > div{
+    font-size: 12px;
+    color: #a5a5a5;
+    text-align: center;
+}
+.searchModal > main .preview > video{
+    display: none;
+}
+
+.searchModal > main > div .preview > .youtubeSearchResult > tr > td:nth-child(2){
+    vertical-align: middle;
+    padding-left: 20px;
+    position: relative;
+}
+.searchModal > main > div .preview > .youtubeSearchResult > tr > td:nth-child(2) > p:nth-child(1){
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.38;
+    letter-spacing: -0.19px;
+    text-align: left;
+    color: #121212;
+}
+.searchModal > main > div .preview > .youtubeSearchResult > tr > td:nth-child(2) > p:nth-child(2){
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: -0.19px;
+    text-align: left;
+    color: #121212;
+}
+.searchModal > main > div .preview > .youtubeSearchResult > tr > td:nth-child(2) > p:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.08;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: #b4b4b4;
+}
+.searchModal > main .btn_line{
+    margin: 0 49px 0 41px;
+    text-align: right;
+}
+.searchModal > main .btn_line > button[type="button"]{
+    width: 180px;
+    height: 40px;
+    background-color: #322b4d;
+    padding: 8px 0;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.19px;
+}
+.searchModal > main .placement{
+    margin: 0 49px 0 41px;
+    padding: 20px 0 8px;
+    overflow: auto;
+}
+.searchModal > main .placement > ul{
+    display: flex;
+}
+.searchModal > main .Placement-Area{
+    width: 139px;
+    height: 53px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 12px 14px 13px;
+    display: inline-flex;
+    margin: 0px 29px 0 0;
+    border: solid 2px #cbcbcb;
+}
+.searchModal > main .Placement-Area > img{
+    width: 100%;
+}
+.searchModal > main .sbsGolf.selected{
+    border-color: #0a85d0;
+}
+.searchModal > main .youtube.selected{
+    border-color: #ed3023;
+}
+.searchModal > main .searchNotice{
+    padding-top: 25px;
+    margin: 0 auto;
+    width: calc(100% - 90px);
+    font-size: 13px;
+    line-height: 1.46;
+    letter-spacing: -0.16px;
+    text-align: left;
+    color: #a5a5a5;
+}
+.searchModal > main .result{
+    margin: 0 auto 30px auto;
+    height: 313px;
+    width: calc(100% - 90px);
+    background-color: #fff;
+    border: 1px solid #b4b4b4;
+    overflow: auto;
+}
+.searchModal > main .result > ul{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #b4b4b4;
+}
+.searchModal > main .result > ul > li{
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    color: #6b6b6b;
+    padding-left: 8px;
+}
+.searchModal > main .result > ul > li:nth-child(1){ width: 6%; text-align: center; }
+.searchModal > main .result > ul > li:nth-child(2){ width: 16%; text-align: center; }
+.searchModal > main .result > ul > li:nth-child(3){ width: 20%; }
+.searchModal > main .result > ul > li:nth-child(4){ width: 34%; }
+.searchModal > main .result > ul > li:nth-child(5){ width: 24%; }
+.searchModal > main .result > table{
+    width: 100%;
+    background-color: #fff;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+.searchModal > main .result > table th,
+.searchModal > main .result > table td{
+    vertical-align: middle;
+}
+.searchModal > main .result > table td{
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: -0.14px;
+    color: #b4b4b4;
+}
+.searchModal > main .result > table td:nth-child(1),
+.searchModal > main .result > table td:nth-child(2){
+    text-align: center;
+}
+.searchModal > main .result > table td:nth-child(2) > img{
+    width: 70px;
+    /* height: 70px; */
+    background-color: #cbcbcb;
+}
+.searchModal > main .result > table td.title{
+    width: unset;
+    line-height: 1.67;
+    color: #121212;
+    font-weight: 500;
+}
+
+.get_item_info{
+    display: none;
+}
+.get_item_info + label{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    position: relative;
+}
+.get_item_info:checked + label{
+    background: url('../images/common/checked.PNG') no-repeat center/103% 103%;
+}
+
+/* 직접 업로드 팝업 */
+.directly_upload_modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.directly_upload_modal > main{
+    width: 800px;
+}
+.directly_upload_modal > main > div{
+    width: 100%;
+    height: auto;
+    min-height: 330px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.directly_upload_modal > main > header{
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 12%);
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: -0.24px;
+    color: #000;
+    padding: 0 23px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.directly_upload_modal > main > header > button{
+    border: none;
+    background-color: inherit;
+    font-size: 48px;
+}
+.directly_upload_modal > main > div > div{
+    text-align: center;
+    width: 100%;
+}
+.directly_upload_modal > main > div > div > div > div{
+    background-color: #fff;
+    width: 77px;
+    height: 77px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.directly_upload_modal > main > div > div > div > p:nth-child(2){
+    font-size: 16px;
+    line-height: 2.63;
+    letter-spacing: -0.19px;
+    text-align: center;
+    color: #6b6b6b;
+}
+.directly_upload_modal > main > div > div > div > p:nth-child(3){
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: -0.12px;
+    text-align: center;
+    color: #b4b4b4;
+}
+.directly_upload_modal > main > div > div > div > label > img{
+    width: 204px;
+    /* height: 204px; */
+    margin-right: 12px;
+}
+.directly_upload_modal > main > div > div > div > label.file_upload{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #4d20a3;
+    border: none;
+    color: #ffffff;
+    font-family: NotoSansCJKkr;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    margin-top: 20px;
+    cursor : pointer;
+}
+.directly_upload_modal > main > div > div > div > label + input[type="file"]{
+    display: none;
+}
+.directly_upload_modal > main > div > div > button[type="submit"]{
+    width: 120px;
+    height: 30px;
+    background-color: #4d20a3;
+    border: none;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    text-align: center;
+    color: #ffffff;
+    float: right;
+    margin-right: 21px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.directly_upload_modal > main > div > div > div > .item_image_select_info{
+    margin-left: 24px;
+    font-size: 12px;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: #cbcbcb;
+}
+.directly_upload_modal > main > div > div > div > .item_image_select_info > span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 3;
+    margin-right: 12px;
+}
+/* ai_submit > ai_edit 팝업 */
+.ai_submit {
+    min-width: 1200px;
+}
+.ai_submit > .ai_edit_form {
+    width: 1200px !important;
+    height: 580px !important;
+    position: relative !important;
+}
+.ai_submit > .ai_edit_form > .ai_edit_header {
+    width: 100%;
+    height: 60px;
+    position: relative !important;
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 17px;
+    letter-spacing: -0.2px;
+    line-height: 28px;
+    padding-left: 35px;
+    padding-top: 16px;
+}
+.ai_submit> .ai_edit_form > .ai_edit_preview {
+    width: unset !important;
+    background-color: unset !important;
+    margin-top: 25px;
+}
+.ai_submit> .ai_edit_form > .ai_edit_preview > div:last-child {
+    display: inline-block !important;
+    vertical-align: bottom !important;
+    position: relative !important;
+}
+.ai_submit > .ai_edit_form > .ai_edit_preview > div:nth-child(1){
+    width: 100%;
+    height: 100%;
+    max-width: calc(100% - 400px);
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+}
+.ai_submit > .ai_edit_form > .ai_edit_preview > .make_ai_model_draw_img{
+    position: absolute;
+    right: 50px;
+    width: 400px;
+}
+.ai_submit> .ai_edit_form > .ai_edit_preview > div > div > button {
+    width: 135px;
+    height: 40px;
+    background-color: #7f7f7f;
+    border: none;
+    margin-left: 23px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.17px;
+    text-align: center;
+    color: #ffffff;
+}
+.ai_submit> .ai_edit_form > .ai_edit_preview > div > div > button:nth-child(2){
+    background-color: #7c38ff;
+    margin-left: 10px;
+}
+.ai_submit> .ai_edit_form > .ai_edit_preview > div > span{
+    font-family: AppleSDGothicNeo;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: left;
+    color: #707070;
+    margin: 20px 0 0 23px;
+    display: inline-block;
+}
+
+/* ai_submit > ai_metadata 팝업 */
+.ai_submit {
+    min-width: 1200px;
+}
+.ai_submit > .ai_metadata_form {
+    width: 1200px !important;
+    height: 760px !important;
+    position: relative !important;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_header {
+    width: 100%;
+    height: 60px;
+    position: relative !important;
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 17px;
+    letter-spacing: -0.2px;
+    line-height: 28px;
+    padding-left: 35px;
+    padding-top: 16px;
+}
+.ai_submit> .ai_metadata_form > .ai_metadata_preview {
+    width: unset !important;
+    background-color: unset !important;
+    margin-top: 25px;
+    height: 380px;
+}
+.ai_submit> .ai_metadata_form > .ai_metadata_preview > div:last-child {
+    display: inline-block !important;
+    vertical-align: bottom !important;
+    position: relative !important;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > div:nth-child(1){
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > .make_ai_model_draw_img{
+    position: absolute;
+    right: 50px;
+    width: 400px;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > div > div{
+    float: right;
+    padding-right: 23px;
+}
+.ai_submit> .ai_metadata_form > .ai_metadata_preview > div > div > button {
+    width: 135px;
+    height: 40px;
+    background-color: #7f7f7f;
+    border: none;
+    margin-left: 23px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.17px;
+    text-align: center;
+    color: #ffffff;
+}
+.ai_submit> .ai_metadata_form > .ai_metadata_preview > div > div > button:nth-child(2){
+    background-color: #7c38ff;
+    margin-left: 10px;
+}
+.ai_submit> .ai_metadata_form > .ai_metadata_preview > div > span{
+    font-family: AppleSDGothicNeo;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: left;
+    color: #707070;
+    margin: 20px 0 0 23px;
+    display: inline-block;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > div > .make_ai_modeling_item{
+    width: 1200px;
+    border-top: solid 5px #262626;
+    margin-top: 25px;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > div > .make_ai_modeling_item > p{
+    font-size: 14px;
+    letter-spacing: -0.17px;
+    color: #ffffff;
+    margin: 15px 0 23px 38px;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > div > .make_ai_modeling_item > .item_container{
+    width: 1200px;
+    margin-top: 23px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 16px;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > div > .make_ai_modeling_item > .item_container::-webkit-scrollbar{
+    height: 17px;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > div > .make_ai_modeling_item > .item_container::-webkit-scrollbar-track{
+    background-color: #4b4b4b;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > div > .make_ai_modeling_item > .item_container::-webkit-scrollbar-thumb{
+    background-color: #7f7f7f;
+    border-radius: 50px;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > div > .make_ai_modeling_item > div > div{
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
+.ai_submit > .ai_metadata_form > .ai_metadata_preview > div > .make_ai_modeling_item > div > div > label > img{
+    width: 130px;
+    margin: 0 19px 0 0;
+    border-radius: 5px;
+    border: solid 2px #e6e6e6;
+}
