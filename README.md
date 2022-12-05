@@ -16,4 +16,4 @@ react 모듈 설치
     unset HOST 입력
 
 
-<img src="https://img.shields.io/badge/React-색상?style=for-the-badge&logo=React&logoColor=#61DAFB">
+<img src="https://img.shields.io/badge/React-색상?style=for-the-badge&logo=React&logoColor=white">
