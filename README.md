@@ -1,19 +1,28 @@
-python 모듈 설치
-    pip install -r requirements.txt
-    (in backend)
 
-react 모듈 설치
+## 프론트엔드 모듈 설치 웹 실행
+```
     yarn install
     (in frontend)
-
-백엔드 실행
-    python manage.py runserver 0.0.0.0:8000
     
-프론트엔드 실행
+    프론트엔드 실행
     yarn start
 
     만약 yarn start를 했는데 웹이 켜지지 않으면
     unset HOST 입력
+    
+```
+<br />
+
+## 백엔드 모듈 설치 웹 서버 실행
+```
+python 모듈 설치
+    pip install -r requirements.txt
+    (in backend)
+
+백엔드 실행
+    python manage.py runserver 0.0.0.0:8000
+```    
+
 <center>
 <div style={display : flex}>
 <img src="https://img.shields.io/badge/React-3776AB?style=for-the-badge&logo=React&logoColor=white">
@@ -25,4 +34,3 @@ react 모듈 설치
 <img alt="Axios" src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white">
 </div>
 </center>
-<img src="https://img.shields.io/badge/styled-components?style=for-the-badge&logo=styled-components&logoColor=white">
