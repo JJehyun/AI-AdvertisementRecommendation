@@ -1,5 +1,10 @@
 
-## 프론트엔드 모듈 설치 웹 실행
+# Prerequisites
+1. Clone the repo
+```
+
+
+```
 ```
     yarn install
     (in frontend)
