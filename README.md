@@ -1,7 +1,7 @@
 
 
 <center>
-##기술스택 🛠
+# 기술스택 🛠
 <div style={display : flex}>
 <img src="https://img.shields.io/badge/React-3776AB?style=for-the-badge&logo=React&logoColor=white">
 <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black">
